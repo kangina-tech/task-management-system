@@ -1,3 +1,15 @@
+// user input
+import 'dart:io';
+
+void main() {
+  print('Task: ');
+  print('Description: ');
+  print('Due Date: ');
+  print('Status: ');
+
+  stdin.readLineSync();
+}
+
 // task class
 class Task {
   String title;
@@ -43,9 +55,19 @@ class TaskList {
 }
 
 // task inheritance
-void main() {
-  Homework myHomework = Homework(title: 'Math Homework', description: 'Complete exercises', dueDate: DateTime.now(), status: 'Pending', Subject: 'Math');
-  Work myWork = Work(title: 'Project Deadline', description: 'Submit project report', dueDate: DateTime.now(), status: 'Pending', Activity: 'Report Submission');
+void taskList() {
+  Homework myHomework = Homework(
+      title: 'Math Homework',
+      description: 'Complete exercises',
+      dueDate: DateTime.now(),
+      status: 'Pending',
+      Subject: 'Math');
+  Work myWork = Work(
+      title: 'Project Deadline',
+      description: 'Submit project report',
+      dueDate: DateTime.now(),
+      status: 'Pending',
+      Activity: 'Report Submission');
 
   myHomework.ListHomework();
   myWork.ListWork();
