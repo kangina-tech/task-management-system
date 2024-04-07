@@ -1,5 +1,5 @@
 # Task Management System 📃
-Because I use task management apps like Google Calendar and Notion (my note book if we are being very serious about minute planning), it made sense to make my first dart project focus on creating one. The application does not have life out of the console but this shall be changed at a later time when I have grown more accustomed to Dart.
+Because I use task management apps like Google Calendar and Notion (my note book if we are being very serious about minute planning), it made sense to make my first dart project focus on creating one. The application does not have life out of the terminal but this shall be changed at a later time when I have grown more accustomed to Dart.
 
 ## Technology 🧑‍💻
 <kbd> <br> Dart <br> </kbd>
