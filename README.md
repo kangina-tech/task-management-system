@@ -2,7 +2,7 @@
 Because I use task management apps like Google Calendar and Notion (my note book if we are being very serious about minute planning), it made sense to make my first dart project focus on creating one. The application does not have life out of the console but this shall be changed at a later time when I have grown more accustomed to Dart.
 
 ## Technology 🧑‍💻
-<kbd><br> Dart <br></kbd>
+<kbd> <br> Dart <br> </kbd>
 
 ## Features 🪶
 What can you do with the task management system?
@@ -28,7 +28,7 @@ The fifth and last step was creating data persistance aka, implementing the save
 **Interactivity** - Being used to interactivity being a guarantee with languages like C and Python, I was pleasantly surprised to discover that Dart is not inherently interactive and that it is up to the programmer to make it so. 
 **New ways to create algorithms** - I still find it a challenge creating algorithms but when I get something right, it feels like a great accomplishment. I know that I can make some parts feel less clunky but that is a job for the future me!
 **Time Management** - I set a specific time frame and I blew right past it. That being said, I learnt more on how to create realistic time frames as opposed to what I am feeling.
-**New knowledge** - The <kbd><br> import 'dart.io' <br></kbd> function. It is a whole new topic that I am to cover in depth. 
+**New knowledge** - The <kbd> <br> import 'dart.io' <br> </kbd> function. It is a whole new topic that I am to cover in depth. 
 
 ## Improvements ➕
 * Creating a UI
@@ -38,5 +38,5 @@ The fifth and last step was creating data persistance aka, implementing the save
 * Fork repository to your own Github account.
 * Clone repository to your own machine.
 * Open the code on preferred editor.
-* Make sure you have all the dependancies you might need for the code to work. If not, you can use <kbd><br> npm install <br></kbd> to install and <kbd><br> npm run start <br></kbd> to run.
+* Make sure you have all the dependancies you might need for the code to work. If not, you can use <kbd> <br> npm install <br> </kbd> to install and <kbd> <br> npm run start <br> </kbd> to run.
 * You should be able to access it in your terminal.
