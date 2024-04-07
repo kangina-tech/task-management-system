@@ -25,9 +25,13 @@ The fifth and last step was creating data persistance aka, implementing the save
 
 ## What Did I Learn? 🧑‍🎓
 **Inheritance** - There are so many things that can go wrong with inheritance but when gotten right, it is the most satisfying process.
+
 **Interactivity** - Being used to interactivity being a guarantee with languages like C and Python, I was pleasantly surprised to discover that Dart is not inherently interactive and that it is up to the programmer to make it so. 
+
 **New ways to create algorithms** - I still find it a challenge creating algorithms but when I get something right, it feels like a great accomplishment. I know that I can make some parts feel less clunky but that is a job for the future me!
+
 **Time Management** - I set a specific time frame and I blew right past it. That being said, I learnt more on how to create realistic time frames as opposed to what I am feeling.
+
 **New knowledge** - The <kbd> <br> import 'dart.io' <br> </kbd> function. It is a whole new topic that I am to cover in depth. 
 
 ## Improvements ➕
