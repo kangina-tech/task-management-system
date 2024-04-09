@@ -28,7 +28,7 @@ void main() {
         updateTask(taskList);
         break;
       case '4':
-        printTask(taskList);
+        taskList.printTask();
         break;
       case '5':
         print('Exiting program...');
@@ -36,6 +36,72 @@ void main() {
       default:
         print('Invalid choice. Please try again.');
     }
+  }
+}
+
+// Function to add a task
+void addTask(TaskList taskList) {
+  print('\nEnter task details:');
+  stdout.write('Title: ');
+  String title = stdin.readLineSync() ?? '';
+
+  stdout.write('Description: ');
+  String description = stdin.readLineSync() ?? '';
+
+  stdout.write('Due Date (YYYY-MM-DD): ');
+  DateTime dueDate = DateTime.parse(stdin.readLineSync() ?? '');
+
+  stdout.write('Status: ');
+  String status = stdin.readLineSync() ?? '';
+
+  Task task = Task(
+      title: title, description: description, dueDate: dueDate, status: status);
+  taskList.addTask(task); // Add task to the task list
+  print('Task added successfully.');
+}
+
+// Function to remove a task
+void removeTask(TaskList taskList) {
+  stdout.write('Enter the index of the task to remove: ');
+  int? index = int.tryParse(stdin.readLineSync() ?? '');
+  if (index != null) {
+    taskList.removeTask(index - 1); // Remove task at the specified index
+    print('Task removed successfully.');
+  } else {
+    print('Invalid index.');
+  }
+}
+
+// Function to update a task
+void updateTask(TaskList taskList) {
+  stdout.write('Enter the index of the task to update: ');
+  int? index = int.tryParse(stdin.readLineSync() ?? '');
+  if (index != null && index >= 1 && index <= taskList.tasks.length) {
+    Task task = taskList.tasks[index - 1];
+
+    print('\nEnter updated task details:');
+    stdout.write('Title: ');
+    String title = stdin.readLineSync() ?? '';
+
+    stdout.write('Description: ');
+    String description = stdin.readLineSync() ?? '';
+
+    stdout.write('Due Date (YYYY-MM-DD): ');
+    DateTime dueDate = DateTime.parse(stdin.readLineSync() ?? '');
+
+    stdout.write('Status: ');
+    String status = stdin.readLineSync() ?? '';
+
+    taskList.updateTask(
+        index - 1,
+        Task(
+            title: title,
+            description: description,
+            dueDate: dueDate,
+            status: status));
+    print('Task updated successfully.');
+  } else {
+    print('Invalid index.');
   }
 }
 
@@ -79,6 +145,18 @@ class TaskList {
   void printTask() {
     for (int i = 0; i < tasks.length; i++) {
       print('${i + 1}. ${tasks[i].title}');
+    }
+  }
+
+  // Method to display tasks
+  void printTasks() {
+    if (tasks.isEmpty) {
+      print('No tasks available.');
+    } else {
+      print('\nTasks:');
+      for (int i = 0; i < tasks.length; i++) {
+        print('${i + 1}. ${tasks[i].title}');
+      }
     }
   }
 }
