@@ -2,15 +2,40 @@ import 'dart:io';
 
 // user input
 void main() {
-  while (true) { 
-  print('/nMenu: ');
-  print('1. Task');
-  print('2. Description');
-  print('3. Due Date');
-  print('4. Status');
-  print('5. Exit');
+  TaskList taskList = TaskList();
 
-  stdout.write('Enter task: ');
+  while (true) {
+    print('/nMenu: ');
+    print('1. Task');
+    print('2. Description');
+    print('3. Due Date');
+    print('4. Status');
+    print('5. Exit');
+
+    stdout.write('Enter task: ');
+
+    String? input = stdin.readLineSync();
+
+    // accessing task list
+    switch (input) {
+      case '1':
+        addTask(taskList);
+        break;
+      case '2':
+        removeTask(taskList);
+        break;
+      case '3':
+        updateTask(taskList);
+        break;
+      case '4':
+        printTask(taskList);
+        break;
+      case '5':
+        print('Exiting program...');
+        exit(0);
+      default:
+        print('Invalid choice. Please try again.');
+    }
   }
 }
 
@@ -51,7 +76,7 @@ class TaskList {
   }
 
   // display
-  void printTasks() {
+  void printTask() {
     for (int i = 0; i < tasks.length; i++) {
       print('${i + 1}. ${tasks[i].title}');
     }
