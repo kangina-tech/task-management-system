@@ -1,13 +1,17 @@
-// user input
 import 'dart:io';
 
+// user input
 void main() {
-  print('Task: ');
-  print('Description: ');
-  print('Due Date: ');
-  print('Status: ');
+  while (true) { 
+  print('/nMenu: ');
+  print('1. Task');
+  print('2. Description');
+  print('3. Due Date');
+  print('4. Status');
+  print('5. Exit');
 
-  stdin.readLineSync();
+  stdout.write('Enter task: ');
+  }
 }
 
 // task class
